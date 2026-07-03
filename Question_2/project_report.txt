@@ -1,1 +1,16 @@
+Secure Project Workspace Report
 
+1. Directory Structure:
+Created a project workspace named "project_workspace" with two subdirectories: "docs" and "code". Inside the "docs" directory, a file named "design.txt" was created.
+
+2. File Permissions:
+The initial default permissions for "design.txt" were "-rw-rw-r--". The permissions for the "code" directory were successfully modified to "drwx------" using the chmod 700 command.
+
+3. Ownership Details:
+The owner and group of "design.txt" were successfully set to the current user "omteja" using the chown command.
+
+4. Umask Value:
+The current umask value is 0002.
+
+5. Explanation of Protection:
+Setting the "code" directory permissions to 700 ensures that only the owner (omteja) can read, write, and execute files inside it. Other users and groups cannot access the directory, improving the security of the project workspace.
