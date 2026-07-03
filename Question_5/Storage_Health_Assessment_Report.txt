@@ -1,1 +1,19 @@
+Storage Health Assessment Report
 
+1. Available Storage Devices:
+The `lsblk` command identified the primary storage device as **nvme0n1** with a total capacity of **476.9G**. It contains multiple partitions, including EFI, Linux, Windows, and recovery partitions. Several loop devices used by Snap packages were also present.
+
+2. Mounted File Systems:
+The Linux root file system (`/dev/nvme0n1p5`) is mounted at `/`. Additional mounted file systems include `/boot/efi`, `/media/windows`, `/dev/shm`, `/run`, and other temporary filesystems.
+
+3. Disk Usage Statistics:
+The root partition has a total capacity of **233G**, with **61G used**, **160G available**, and **28% disk usage**, indicating sufficient free storage.
+
+4. Inode Utilization:
+The root partition contains **15,556,608** total inodes, with **884,655** in use and **14,671,953** free, resulting in only **6% inode utilization**.
+
+5. Storage Health Observation:
+The storage system is in good condition. Both disk space usage (28%) and inode usage (6%) are low, leaving ample capacity for additional files and applications.
+
+6. Recommendation:
+No immediate storage upgrades are required. Continue monitoring disk usage regularly and remove unnecessary files or logs when needed to maintain healthy storage utilization.
