@@ -1,1 +1,11 @@
+Linux Environment Verification Report
 
+1. Username and Groups: The active user is "omteja", associated with the "omteja" and "users" groups.
+
+2. Current Shell: The current command-line shell environment is /bin/bash.
+
+3. Current Working Directory: The workspace is located at /home/omteja.
+
+4. Workspace Contents: The current working directory is empty. The `ls -ls` command showed no files or directories.
+
+5. Network Connectivity: The network is active and correctly configured. The system successfully transmitted and received 4 packets to google.com with 0% packet loss.
